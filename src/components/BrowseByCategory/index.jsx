@@ -1,31 +1,36 @@
 import { Paper, Stack, Typography, Box } from "@mui/material"
 
 export default function BrowseByCategory() {
-    return <>
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '300px' }}>
-
-            <BrowseTitle />
-            <Box sx={{ width: '100%', height: '100%', margin: '5px', overflow: 'auto' }}>
-                <Stack direction="row" spacing={2}>
-
-                    <BrowseCardStrip />
-
-                </Stack>
+    return (
+        <>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                <BrowseTitle />
             </Box>
-        </Box>
-    </>
+            <Box sx={{ height: '300px', overflow: 'auto' }}>
+                <BrowseCardStrip />
+            </Box>
+        </>
+    );
 }
 
 function BrowseCardStrip() {
-    return <>
-        
-            <BrowseCard />
-            <BrowseCard />
-            <BrowseCard />
-            <BrowseCard />
-            <BrowseCard />
-        
-    </>
+    return (
+        <>
+            <Stack direction={'row'} sx={{ overflow: 'auto'}}>
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+                <BrowseCard />
+            </Stack>
+        </>
+    );
 }
 
 function BrowseTitle({ title = "Browse by Category" }) {
