@@ -18,7 +18,7 @@ function App() {
         <EventHero />
         <TopChartEvent />
         <BrowseByCategory />
-        <PostEventForum/>
+        {/* <PostEventForum/> */}
       </Stack>
      </>
   )
